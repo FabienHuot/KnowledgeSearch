@@ -1,0 +1,45 @@
+<template>
+<div class="slds-page-header">
+<h1><b>Rechercher dans la base de connaissance (BETA)</b></h1>
+<lightning-layout>
+<lightning-layout-item padding="around-small">
+<div><lightning-input label="Rechercher" value={article} onchange={changeHandler}></lightning-input></div>
+
+</lightning-layout-item>
+<lightning-layout-item padding="around-small">
+    <div class="slds-form-element">
+        <label class="slds-form-element__label" for="select-01">Cible</label>
+        <div class="slds-form-element__control">
+          <div class="slds-select_container">
+            <select class="slds-select" id="selectId" onchange={handleCible}>
+                    <option value="Tous" selected>Tous</option>
+                <template for:each={cibles} for:item="c" for:index='index'>
+                        <option key={c} value={c}>{c}</option>    
+                </template>
+            </select>
+          </div>
+        </div>
+      </div>
+</lightning-layout-item>
+</lightning-layout>
+<template if:true={articleList} >
+<lightning-layout>
+<lightning-layout-item padding="around-small">
+        {articleListLength} article(s) trouvé(s)
+</lightning-layout-item>
+</lightning-layout>
+</template>
+<lightning-layout>
+    <lightning-layout-item padding="around-small">
+<div class="data-list">
+<template if:true={articleList} >
+        <template for:each={articleList} for:item="a">
+            <a key={a.Id} data-toto={a.Id} onclick={redirectToArticle} ><p key={a.Title}>{a.Title}</p></a>
+        </template>
+   </template>
+<template if:false={articleList} ><i>Aucun article trouvé.</i></template>
+</div>
+</lightning-layout-item>
+</lightning-layout>
+</div>
+</template>
