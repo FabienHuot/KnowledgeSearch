@@ -1,5 +1,5 @@
 {
-    "eslint.nodePath": "c:\\Users\\fhuot\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lwc-45.6.0\\node_modules",
+    "eslint.nodePath": "c:\\Users\\fhuot\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lwc-45.8.0\\node_modules",
     "html.suggest.angular1": false,
     "html.suggest.ionic": false,
     "salesforcedx-vscode-core.show-cli-success-msg": false

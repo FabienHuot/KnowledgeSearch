@@ -1,0 +1,29 @@
+:host .slds-page-header{
+    background-color:white;
+}
+
+:host .data-list {
+    padding:0 12px 0 0 !important;
+}
+
+:host .adjust-padding {
+    padding:0 0 0 12px;
+}
+
+:host .float-left {
+    float:left;
+}
+
+:host .size {
+    line-height: 1rem;
+    font-size: 1rem;
+}
+
+:host .size:hover {
+    cursor: pointer;
+
+}
+
+:host .title {
+    line-height: 1rem;
+}

@@ -1,0 +1,52 @@
+<template>
+<div class={componentClass}>
+    <span class="title"><h1><b>Rechercher dans la base de connaissance (BETA) &nbsp;&nbsp;&nbsp;</b><span class="size" onclick={showDetails}><b>+</b></span></h1></span>
+    <template if:true={display}>
+    <div id="container"> <!--id="container" style="display:none"-->
+        <lightning-layout>
+
+            <lightning-layout-item padding="around-small">
+            <div>
+                <lightning-input label="Rechercher" onchange={changeHandler}></lightning-input>
+            </div>
+            </lightning-layout-item>
+
+            <lightning-layout-item padding="around-small">
+                <div class="slds-form-element">
+                <label class="slds-form-element__label" for="select-01">Cible</label>
+                    <div class="slds-form-element__control">
+                        <div class="slds-select_container">
+                        <select class="slds-select" id="selectId" onchange={handleCible}>
+                                <option value="Tous" selected>Tous</option>
+                            <template for:each={cibles} for:item="c" for:index='index'>
+                                    <option key={c} value={c}>{c}</option>    
+                            </template>
+                        </select>
+                        </div>
+                    </div>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+        <template if:true={articleList} >
+            <lightning-layout>
+                <lightning-layout-item padding="around-small" class="adjust-padding">
+                    {articleList.length} article(s) trouvé(s)
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+        <lightning-layout>
+            <lightning-layout-item class="data-list">
+            <div class="data-list adjust-padding">
+                <template if:true={articleList} >
+                    <template for:each={articleList} for:item="a">
+                        <a key={a.data.Id} data-toto={a.data.Id} href={a.url} onclick={redirectToArticle} ><p key={a.data.Title}>{a.data.Title}</p></a>
+                    </template>
+                </template>
+                <template if:false={articleList}><i>Aucun article trouvé.</i></template>
+            </div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+</template>
+</div>
+</template>
