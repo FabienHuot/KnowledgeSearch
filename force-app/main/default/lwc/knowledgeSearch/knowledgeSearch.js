@@ -2,8 +2,8 @@ import { LightningElement, track, wire, api } from 'lwc';
 
 import { NavigationMixin } from 'lightning/navigation';
 
-import KnowledgeArticles from '@salesforce/apex/knowledgeSearchLWC.KnowledgeArticles';
-import getPicklistValues from '@salesforce/apex/knowledgeSearchLWC.getPicklistValues_old';
+import getKnowledgeRecordTypes from '@salesforce/apex/knowledgeSearchController.getKnowledgeRecordTypes';
+//import getPicklistValues from '@salesforce/apex/knowledgeSearchLWC.getPicklistValues_old';
 
 export default class KnowledgeSearchLWC extends NavigationMixin(LightningElement) {
     @track article;
@@ -22,7 +22,7 @@ export default class KnowledgeSearchLWC extends NavigationMixin(LightningElement
         return (this.displayCard ? 'slds-page-header' : 'slds-m-around_medium');
     }
 
-    @wire(getPicklistValues, {ObjectApi_name : 'Knowledge__kav', Field_name : 'Cible__c'})
+    @wire(getKnowledgeRecordTypes)
     wiredCibles({error, data}) {
         if (data) {
             this.cibles = data;
@@ -34,7 +34,7 @@ export default class KnowledgeSearchLWC extends NavigationMixin(LightningElement
         }
     };
     
-    @wire(KnowledgeArticles, {input : '$article', cat : '$cible'})
+    /*@wire(KnowledgeArticles, {input : '$article', cat : '$cible'})
     wiredArticles({error, data}) {
         if (data) {
 
@@ -66,7 +66,7 @@ export default class KnowledgeSearchLWC extends NavigationMixin(LightningElement
             this.error = error;
             this.articleList = undefined;
         }
-    }
+    }*/
 
     showDetails() {
         this.display = !this.display;

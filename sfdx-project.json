@@ -7,6 +7,5 @@
   ],
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "45.0",
-  "features" : ["Knowledge"]
+  "sourceApiVersion": "45.0"
 }
