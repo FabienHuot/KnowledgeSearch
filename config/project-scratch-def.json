@@ -1,10 +1,16 @@
 {
-  "orgName": "Demo Company",
+  "orgName": "Lightning Knowledge Search Component1",
   "edition": "Developer",
-  "features": [],
+  "features": [
+    "KNOWLEDGE"
+  ],
   "settings": {
     "orgPreferenceSettings": {
       "s1DesktopEnabled": true
-    }
+    },
+    "knowledgeSettings":{
+      "enableKnowledge": true,
+      "enableLightningKnowledge" : true
+  }
   }
 }

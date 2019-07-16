@@ -1,0 +1,211 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef1"
+            },
+            "Title": "What is the difference between Trigger and Workflow?",
+            "UrlName": "What-is-the-difference-between-Trigger-and-Workflow",
+            "Summary": "Workflow is an automated process that fires an action based upon evaluation criteria and rule criteria. As described above, Trigger is the code that is executed on or after the record is updated or inserted."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef2"
+            },
+            "Title": "What are the three types of object relations in Salesforce?",
+            "UrlName": "What-are-the-three-types-of-object-relations-in-Salesforce",
+            "Summary": "The three types of object relations in Salesforce are:\r\n\r\nOne-to-many\r\nMany-to-many\r\nMaster-detail\r\nThe relation types are quite logical once the user becomes familiar with the software program."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef3"
+            },
+            "Title": "I Lost or Can't Remember My Trailhead Login",
+            "UrlName": "I-Lost-or-Can-t-Remember-My-Trailhead-Login",
+            "Summary": "There can be a variety of reasons why you can’t access your Trailhead account. Refer to our Trailhead Login Issues article to narrow these down."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef4"
+            },
+            "Title": "Everything is Linked, But I Still Have Issues",
+            "UrlName": "Everything-is-Linked-But-I-Still-Have-Issues",
+            "Summary": "Even though it appears you’ve successfully linked your accounts, it’s possible you have linked the wrong Trailhead account or the wrong Webassessor account. You can confirm this on our Verification Page. Input your Webassessor email in the “Certification Holders” box, check your email for the details, and click on the “Linked Trailhead Profile” url provided in the email. If you discover your accounts are linked incorrectly, submit a case."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef5"
+            },
+            "Title": "Maintain Your Certifications on Trailhead",
+            "UrlName": "Maintain-Your-Certifications-on-Trailhead",
+            "Summary": "You can learn everything there is to know about maintaining your salesforce credentials to stay on top of things. Here we’ve included some of the more popular topics pertaining to certification maintenance and Trailhead."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef6"
+            },
+            "Title": "What is the trigger?",
+            "UrlName": "What-is-the-trigger",
+            "Summary": "Trigger is the code that is executed before or after the record is updated or inserted."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef7"
+            },
+            "Title": "What is the Object Relationship Overview?",
+            "UrlName": "What-is-the-Object-Relationship-Overview",
+            "Summary": "In Salesforce, the object relationship overview links custom object records to standard object records in a related list. This is helpful to track product defects in related customer cases. Salesforce allows users to define different types of relationships by creating custom relationship fields on an object."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef8"
+            },
+            "Title": "How many types of relationships are offered by Salesforce.com?",
+            "UrlName": "How-many-types-of-relationships-are-offered-by-Salesforce-com",
+            "Summary": "Salesforce recognizes two relationship types: Master-detail relationships and Lookup relationships."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef9"
+            },
+            "Title": "Certifications to Maintain on Trailhead",
+            "UrlName": "Certifications-to-Maintain-on-Trailhead",
+            "Summary": "All certifications are now maintained on Trailhead. The B2B Commerce Administrator and B2B Commerce Developer Accreditations are maintained on Webassessor."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef10"
+            },
+            "Title": "I’ve Completed My Maintenance but My Status Hasn’t Updated",
+            "UrlName": "I-ve-Completed-My-Maintenance-but-My-Status-Hasn-t-Updated",
+            "Summary": "Once you’ve linked your accounts and completed your maintenance modules, you must wait 1 business day for your certification status to show as 'Current'. After 1 business day, confirm your certification status by visiting the Verification Page and entering your Webassessor email in the 'Certification Holders: Check Your Status' box."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef11"
+            },
+            "Title": "How is SaaS beneficial to Salesforce?",
+            "UrlName": "How-is-SaaS-beneficial-to-Salesforce",
+            "Summary": "SaaS is subscription-based, so clients can choose not to renew and discontinue using the program at any time without penalty other than not being able to use Salesforce. SaaS is intended to help users avoid heavy initial startup fees and investments. SaaS applications use a simple Internet interface supported by easy integration."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef12"
+            },
+            "Title": "How does Salesforce track sales?",
+            "UrlName": "How-does-Salesforce-track-sales",
+            "Summary": "Salesforce is a tracking program that records a number of helpful basic details, such as:\r\n\r\nNumber of customers served daily\r\nDaily sales volume\r\nDetailed reports from Sales Manager\r\nSales figures by month or quarter\r\nMost importantly, Salesforce tracks and reports repeat customer activity, which is the key to any sales organization."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef13"
+            },
+            "Title": "I Don't Have a Trailhead Account",
+            "UrlName": "I-Don-t-Have-a-Trailhead-Account",
+            "Summary": "Trailhead is free for everyone. Learn how to Create a Trailhead account."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef14"
+            },
+            "Title": "What is Salesforce?",
+            "UrlName": "What-is-Salesforce",
+            "Summary": "Salesforce is the most effective Customer Relationship Management (CRM) product that is delivered to subscribers as cost effective software-as-a-service (SaaS)."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef15"
+            },
+            "Title": "What can cause data loss in Salesforce?",
+            "UrlName": "What-can-cause-data-loss-in-Salesforce",
+            "Summary": "Data loss in Salesforce can be caused by a number of reasons, including:\r\n\r\nChanging data and date-time\r\nMigrating to percent, number, and currency from other data types\r\nChanging from multi-select picklist, checkbox, auto number to other types\r\nAltering to multi-select picklist from any type except picklist\r\nChanging to auto-number except from text\r\nChanging from text-area to e-mail, phone, URL, and text"
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef16"
+            },
+            "Title": "Is there a limit for data.com records?",
+            "UrlName": "Is-there-a-limit-for-data-com-records",
+            "Summary": "Salesforce users can see their limit form setup easily by simply clicking data.com administration/Users. From the data.com users section, the users can see their monthly limit and exactly how many records are exported during the month."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef17"
+            },
+            "Title": "How to Maintain Your Salesforce Certifications on Trailhead",
+            "UrlName": "How-to-Maintain-Your-Salesforce-Certifications-on-Trailhead",
+            "Summary": "To maintain your certification, you need to complete these actions (in any order):\r\nLink your Trailhead and Webassessor accounts (discussed above).\r\nEarn your maintenance badge(s) on Trailhead. This is a public Trailmix of all maintenance modules available on Trailhead, but you only need to complete the modules related to your certifications.\r\nAfter completing all of the above steps, wait 1 business day for your certification status to update."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef18"
+            },
+            "Title": "What is a custom object in Salesforce?",
+            "UrlName": "What-is-a-custom-object-in-Salesforce",
+            "Summary": "In Salesforce, custom objects refer specifically to database tables that store data related to your company in Salesforce.com"
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef19"
+            },
+            "Title": "What does a custom object permit the user to do?",
+            "UrlName": "What-does-a-custom-object-permit-the-user-to-do",
+            "Summary": "Once the custom object is defined, the subscriber can perform the following tasks: create custom fields, relate the custom object to other records, track events and tasks, build page layouts, create a custom tab for the custom object, analyze custom object data, create dashboards and reports, and share custom tabs, custom apps, custom objects, and various other related components. None of these tasks can be accomplished until the custom object has definition."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef20"
+            },
+            "Title": "What is a Self-Relationship?",
+            "UrlName": "What-is-a-Self-Relationship",
+            "Summary": "A Self-Relationship is a lookup relationship to the same object. It is this premise that allows users to take the object “Merchandise” and create relationships with other objects."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef21"
+            },
+            "Title": "What is the difference between Force.com and Salesforce.com?",
+            "UrlName": "What-is-the-difference-between-Force-com-and-Salesforce-com",
+            "Summary": "Force.com is  Platform-as-a-Service (PaaS), while Salesforce.com is Software-as-a-Service (SaaS)."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef22"
+            },
+            "Title": "Do I Need to Link My Accounts Before I Complete My Maintenance on Trailhead?",
+            "UrlName": "Do-I-Need-to-Link-My-Accounts-Before-I-Complete-My-Maintenance-on-Trailhead",
+            "Summary": "You can complete your maintenance at any time on Trailhead; you do not have to wait to link your accounts first. Once you’ve completed linking and completed your maintenance modules, you must wait 1 business day for your certification status to show as complete."
+        },
+        {
+            "attributes": {
+                "type": "Knowledge__kav",
+                "referenceId": "Knowledge__kavRef23"
+            },
+            "Title": "What is static resource in Salesforce?",
+            "UrlName": "What-is-static-resource-in-Salesforce",
+            "Summary": "With Salesforce’s static resource, subscribers can upload zip files, images, jar files, JavaScript, and CSS files that can be referred in a Visualforce page. The optimum size of static resources in Salesforce is 250 MB."
+        }
+    ]
+}
