@@ -1,7 +1,8 @@
 
 echo '##### CREATING SCRATCH ORG #####'
-sfdx force:org:create -f config/project-scratch-def.json -a KnowledgeWidget -s
+call sfdx force:org:create -f config/project-scratch-def.json -a KnowledgeSearch -s
 echo '##### PUSHING METADATA #####'
-sfdx force:source:push -u KnowledgeWidget
+call sfdx force:source:push -u KnowledgeSearch
+call sfdx force:user:permset:assign -n KnowledgeUser -u KnowledgeSearch
 echo '##### OPENING SCRATCH ORG #####'
-sfdx force:org:open
+call sfdx force:org:open
