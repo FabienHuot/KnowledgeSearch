@@ -1,0 +1,15 @@
+{
+    "Username": "tester1@sfdx.org",
+    "LastName": "Einstein",
+    "FirstName" : "Albert",
+    "Email": "a.einstein@sfdx.org",
+    "Alias": "aein",
+    "TimeZoneSidKey": "America/Denver",
+    "LocaleSidKey": "en_US",
+    "EmailEncodingKey": "UTF-8",
+    "LanguageLocaleKey": "en_US",
+    "profileName": "System Administrator",
+    "permsets": ["KnowledgeUser"],
+    "UserPermissionsKnowledgeUser" : true,
+    "generatePassword": true
+}
