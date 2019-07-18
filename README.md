@@ -1,4 +1,4 @@
-# lwc-knowledge-search
+# Knowledge Search Lighning Web Component
 Lightning Web Component used for searching Lightning Knowledge articles
 
 
@@ -13,3 +13,9 @@ TODO :
 
     - Remove the "hide/show" when the component is used in the utility bar
     - Make inputs and filters dynamically.
+
+    Scratch Org :
+
+    - Generate a username for the new knowledge user created
+    - Enable the 'Organization Admins Can Login as Any User' feature by default
+    
