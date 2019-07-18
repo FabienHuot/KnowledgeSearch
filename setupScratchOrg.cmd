@@ -5,6 +5,7 @@ echo '##### PUSHING METADATA #####'
 call sfdx force:source:push -u KnowledgeSearch
 echo '##### KNOWLEDGE PERMISSIONSET ASSIGNMENT #####'
 call sfdx force:user:permset:assign -n KnowledgeUser -u KnowledgeSearch
+call sfdx force:user:permset:assign -n KnowledgeAppUser -u KnowledgeSearch
 rem echo '##### CREATE KNOWLEDGE USER #####'
 rem sfdx force:user:create --setalias qa-user --definitionfile config/user-def.json
 echo '##### UPDATING USER USER WITH KNOWLEDGE LICENCE #####'
