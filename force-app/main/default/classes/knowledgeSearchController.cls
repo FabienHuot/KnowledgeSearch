@@ -4,7 +4,6 @@ public with sharing class knowledgeSearchController {
 
     @AuraEnabled(cacheable=true)
     public static List<String> KnowledgeRecordTypes(){
-        System.debug('passe ?');
         List<String> knowledgeRecordTypesValues = new List<String>();
 
         // Query all Knowledge__kav active record types
@@ -25,11 +24,9 @@ public with sharing class knowledgeSearchController {
             String knowledgeQuery = '';
             if (cat != null && cat != '' && cat != 'All') {
                 knowledgeQuery = 'SELECT Id, Title, Summary FROM Knowledge__kav WHERE Title LIKE \'%' + input + '%\' AND RecordType.Name = ' + '\'' + cat + '\' LIMIT 10';
-                System.debug('knowledgeQuery: ' + knowledgeQuery);
             }
             else {
                 knowledgeQuery = 'SELECT Id, Title, Summary FROM Knowledge__kav WHERE Title LIKE \'%' + input + '%\' LIMIT 10';
-                System.debug('knowledgeQuery ALL: ' + knowledgeQuery);
             }
             knowledgeArticlesList = Database.query(knowledgeQuery);
         }
