@@ -6,6 +6,10 @@ How to use it :<br/>
     - Clone the repo<br/>
     - <b>run the command : ./setupScratchOrg<br/></b>
     <br/>
+    <br/>
+    <b>Create cases with record types (QA Salesforce, QA Trailhead)</b><br/>
+    <b>Open the component and search for articles<b><br/>
+    
         This script will setup a scratch org with this configuration :<br/>
             - Pushging Metadata (Application, Apex Classes, FlexiPage, LWC)<br/>
             - Set the permission set to be a Knowledge User<br/>
