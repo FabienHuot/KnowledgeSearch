@@ -1,4 +1,4 @@
-# Knowledge Search Lighning Web Component
+# Knowledge Search Lightning Web Component
 Lightning Web Component used for searching Lightning Knowledge articles
 
 

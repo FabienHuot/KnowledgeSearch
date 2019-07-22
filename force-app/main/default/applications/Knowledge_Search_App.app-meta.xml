@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#15D0DA</headerColor>
+        <logo>iconfinder_handdrawngraduationcap_3</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Try the Knowledge Search component here :-)</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Knowledge Search App</label>
+    <navType>Standard</navType>
+    <tabs>standard-Case</tabs>
+    <tabs>Knowledge__kav</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Knowledge_Search_App_UtilityBar</utilityBar>
+</CustomApplication>
