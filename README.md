@@ -8,7 +8,7 @@ How to use it :<br/>
     <br/>
     <br/>
     <b>Create cases with record types (QA Salesforce, QA Trailhead)</b><br/>
-    <b>Open the component and search for articles<b><br/>
+    <b>Open the component and search for articles</b><br/>
     
         This script will setup a scratch org with this configuration :<br/>
             - Pushging Metadata (Application, Apex Classes, FlexiPage, LWC)<br/>
