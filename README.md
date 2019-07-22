@@ -2,6 +2,15 @@
 Lightning Web Component used for searching Lightning Knowledge articles
 
 
+How to use it :
+    - Clone the repo
+    - run the command : ./setupScratchOrg
+        This script will setup a scratch org with this configuration :
+            - Pushging Metadata (Application, Apex Classes, FlexiPage, LWC)
+            - Set the permission set to be a Knowledge User
+            - Set the permission set to access to the Knowledge App
+            - Importing demo's articles
+
 Current version :
 
     - Adding redirection to Knowledge articles in a new browser tab.
