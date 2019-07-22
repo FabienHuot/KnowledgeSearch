@@ -1,8 +1,11 @@
+/* eslint-disable no-console */
+
 import { LightningElement, track, wire, api } from 'lwc';
 
 import { NavigationMixin } from 'lightning/navigation';
 
-import getKnowledgeRecordTypes from '@salesforce/apex/knowledgeSearchController.getKnowledgeRecordTypes';
+import KnowledgeRecordTypes from '@salesforce/apex/knowledgeSearchController.KnowledgeRecordTypes';
+import KnowledgeArticles from '@salesforce/apex/knowledgeSearchController.KnowledgeArticles';
 //import getPicklistValues from '@salesforce/apex/knowledgeSearchLWC.getPicklistValues_old';
 
 export default class KnowledgeSearchLWC extends NavigationMixin(LightningElement) {
@@ -12,8 +15,10 @@ export default class KnowledgeSearchLWC extends NavigationMixin(LightningElement
 
     @track results
 
-    @track cible = 'Tous';
-    @track rt;
+    //@track cible = 'Tous';
+
+    @track rt = 'All';
+    @track rtList = [];
 
     @api displayCard;
 
@@ -21,21 +26,21 @@ export default class KnowledgeSearchLWC extends NavigationMixin(LightningElement
         return (this.displayCard ? 'slds-page-header' : 'slds-m-around_medium');
     }
 
-    @wire(getKnowledgeRecordTypes)
-    wiredCibles({error, data}) {
+    @wire(KnowledgeRecordTypes)
+    wiredRecordTypes({error, data}) {
         if (data) {
-            this.rt = data;
+            this.rtList = data;
             console.log('data', data);
             this.error = undefined;
         }
         if (error) {
             this.error = error;
-            console.log('data error', data);
-            this.rt = undefined;
+            console.log('data error', error);
+            this.rtList = undefined;
         }
     };
     
-    /*@wire(KnowledgeArticles, {input : '$article', cat : '$cible'})
+    @wire(KnowledgeArticles, {input : '$article', cat : '$rt'})
     wiredArticles({error, data}) {
         if (data) {
 
@@ -67,14 +72,16 @@ export default class KnowledgeSearchLWC extends NavigationMixin(LightningElement
             this.error = error;
             this.articleList = undefined;
         }
-    }*/
+    }
 
     changeHandler(event) {
         this.article = event.target.value;
+        console.log('article', this.article);
     }
 
     handleCible(event) {
         this.rt = event.target.value;
+        console.log('rt', this.rt);
     }
 
     redirectToArticle(event) {

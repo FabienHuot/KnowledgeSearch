@@ -34,7 +34,7 @@
             <componentInstanceProperties>
                 <name>width</name>
                 <type>decorator</type>
-                <value>340</value>
+                <value>550</value>
             </componentInstanceProperties>
             <componentName>knowledgeSearch</componentName>
         </componentInstances>

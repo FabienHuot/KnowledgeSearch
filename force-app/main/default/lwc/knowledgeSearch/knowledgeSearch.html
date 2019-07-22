@@ -1,23 +1,23 @@
 <template>
 <div class={componentClass}>
-    <span class="title"><h1><b>Knowledge Search Component (BETA) &nbsp;&nbsp;&nbsp;</b><span class="size"><b>+</b></span></h1></span>
+    <span class="title"><h1><b>Knowledge Search Component (BETA) &nbsp;&nbsp;&nbsp;</b><span class="size"></span></h1></span>
     <div id="container"> <!--id="container" style="display:none"-->
         <lightning-layout>
 
-            <lightning-layout-item padding="around-small">
+            <lightning-layout-item padding="around-small" size="6" >
             <div>
                 <lightning-input label="Search" onchange={changeHandler}></lightning-input>
             </div>
             </lightning-layout-item>
 
-            <lightning-layout-item padding="around-small">
+            <lightning-layout-item padding="around-small" size="6">
                 <div class="slds-form-element">
                 <label class="slds-form-element__label" for="select-01">Record Type</label>
                     <div class="slds-form-element__control">
                         <div class="slds-select_container">
                         <select class="slds-select" id="selectId" onchange={handleCible}>
                                 <option value="All" selected>All</option>
-                            <template for:each={rt} for:item="r" for:index='index'>
+                            <template for:each={rtList} for:item="r" for:index='index'>
                                     <option key={r} value={r}>{r}</option>    
                             </template>
                         </select>
@@ -41,7 +41,7 @@
                         <a key={a.data.Id} data-toto={a.data.Id} href={a.url} onclick={redirectToArticle} ><p key={a.data.Title}>{a.data.Title}</p></a>
                     </template>
                 </template>
-                <template if:false={articleList}><i>Aucun article trouvé.</i></template>
+                <template if:false={articleList}><i>No articles found.</i></template>
             </div>
             </lightning-layout-item>
         </lightning-layout>

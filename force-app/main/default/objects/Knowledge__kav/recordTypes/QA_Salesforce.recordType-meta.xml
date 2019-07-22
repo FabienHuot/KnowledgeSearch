@@ -2,5 +2,5 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>QA_Salesforce</fullName>
     <active>true</active>
-    <label>Q&amp;A Salesforce</label>
+    <label>QA_Salesforce</label>
 </RecordType>

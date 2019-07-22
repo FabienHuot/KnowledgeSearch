@@ -2,5 +2,5 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>QA_Trailhead</fullName>
     <active>true</active>
-    <label>Q&amp;A Trailhead</label>
+    <label>QA_Trailhead</label>
 </RecordType>

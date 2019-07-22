@@ -2,12 +2,16 @@ public with sharing class knowledgeSearchController {
     public knowledgeSearchController() {
     }
 
-    @AuraEnabled
-    public static List<RecordType> getKnowledgeRecordTypes(){
-        List<RecordType> knowledgeRecordTypesValues = new List<RecordType>();
+    @AuraEnabled(cacheable=true)
+    public static List<String> KnowledgeRecordTypes(){
+        System.debug('passe ?');
+        List<String> knowledgeRecordTypesValues = new List<String>();
 
         // Query all Knowledge__kav active record types
-        knowledgeRecordTypesValues = [SELECT Name FROM RecordType WHERE IsActive = true AND SobjectType = 'Knowledge__kav'];
+        for (RecordType rt : [SELECT Name FROM RecordType WHERE IsActive = true AND SobjectType = 'Knowledge__kav']) {
+            knowledgeRecordTypesValues.add(rt.Name);
+        }
+        System.debug('knowledgeRecordTypesValues:' + knowledgeRecordTypesValues);
         return knowledgeRecordTypesValues;
     }    
 
@@ -19,11 +23,13 @@ public with sharing class knowledgeSearchController {
         // Searching in Knowledge Subject
         if (input != '' && input != null) {
             String knowledgeQuery = '';
-            if (cat != null && cat != '' && cat != 'Tous') {
-                knowledgeQuery = 'SELECT Id, Title, Cible__c, Summary FROM Knowledge__kav WHERE Title LIKE \'%' + input + '%\' AND Cible__c INCLUDES (\''+ cat + '\')  LIMIT 10';
+            if (cat != null && cat != '' && cat != 'All') {
+                knowledgeQuery = 'SELECT Id, Title, Summary FROM Knowledge__kav WHERE Title LIKE \'%' + input + '%\' AND RecordType.Name = ' + '\'' + cat + '\' LIMIT 10';
+                System.debug('knowledgeQuery: ' + knowledgeQuery);
             }
             else {
-                knowledgeQuery = 'SELECT Id, Title, Cible__c, Summary FROM Knowledge__kav WHERE Title LIKE \'%' + input + '%\' LIMIT 10';
+                knowledgeQuery = 'SELECT Id, Title, Summary FROM Knowledge__kav WHERE Title LIKE \'%' + input + '%\' LIMIT 10';
+                System.debug('knowledgeQuery ALL: ' + knowledgeQuery);
             }
             knowledgeArticlesList = Database.query(knowledgeQuery);
         }
