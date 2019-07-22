@@ -1,25 +1,24 @@
 <template>
 <div class={componentClass}>
-    <span class="title"><h1><b>Rechercher dans la base de connaissance (BETA) &nbsp;&nbsp;&nbsp;</b><span class="size" onclick={showDetails}><b>+</b></span></h1></span>
-    <template if:true={display}>
+    <span class="title"><h1><b>Knowledge Search Component (BETA) &nbsp;&nbsp;&nbsp;</b><span class="size"><b>+</b></span></h1></span>
     <div id="container"> <!--id="container" style="display:none"-->
         <lightning-layout>
 
             <lightning-layout-item padding="around-small">
             <div>
-                <lightning-input label="Rechercher" onchange={changeHandler}></lightning-input>
+                <lightning-input label="Search" onchange={changeHandler}></lightning-input>
             </div>
             </lightning-layout-item>
 
             <lightning-layout-item padding="around-small">
                 <div class="slds-form-element">
-                <label class="slds-form-element__label" for="select-01">Cible</label>
+                <label class="slds-form-element__label" for="select-01">Record Type</label>
                     <div class="slds-form-element__control">
                         <div class="slds-select_container">
                         <select class="slds-select" id="selectId" onchange={handleCible}>
-                                <option value="Tous" selected>Tous</option>
-                            <template for:each={cibles} for:item="c" for:index='index'>
-                                    <option key={c} value={c}>{c}</option>    
+                                <option value="All" selected>All</option>
+                            <template for:each={rt} for:item="r" for:index='index'>
+                                    <option key={r} value={r}>{r}</option>    
                             </template>
                         </select>
                         </div>
@@ -30,7 +29,7 @@
         <template if:true={articleList} >
             <lightning-layout>
                 <lightning-layout-item padding="around-small" class="adjust-padding">
-                    {articleList.length} article(s) trouvé(s)
+                    {articleList.length} article(s) found
                 </lightning-layout-item>
             </lightning-layout>
         </template>
@@ -47,6 +46,5 @@
             </lightning-layout-item>
         </lightning-layout>
     </div>
-</template>
 </div>
 </template>

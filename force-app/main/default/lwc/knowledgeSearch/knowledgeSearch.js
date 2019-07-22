@@ -9,12 +9,11 @@ export default class KnowledgeSearchLWC extends NavigationMixin(LightningElement
     @track article;
     @track articleList = [];
 
-    @track display;
 
     @track results
 
     @track cible = 'Tous';
-    @track cibles;
+    @track rt;
 
     @api displayCard;
 
@@ -25,12 +24,14 @@ export default class KnowledgeSearchLWC extends NavigationMixin(LightningElement
     @wire(getKnowledgeRecordTypes)
     wiredCibles({error, data}) {
         if (data) {
-            this.cibles = data;
+            this.rt = data;
+            console.log('data', data);
             this.error = undefined;
         }
         if (error) {
             this.error = error;
-            this.cibles = undefined;
+            console.log('data error', data);
+            this.rt = undefined;
         }
     };
     
@@ -68,16 +69,12 @@ export default class KnowledgeSearchLWC extends NavigationMixin(LightningElement
         }
     }*/
 
-    showDetails() {
-        this.display = !this.display;
-    }
-
     changeHandler(event) {
         this.article = event.target.value;
     }
 
     handleCible(event) {
-        this.cible = event.target.value;
+        this.rt = event.target.value;
     }
 
     redirectToArticle(event) {
