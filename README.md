@@ -1,12 +1,15 @@
 # Knowledge Search Lightning Web Component
 Lightning Web Component used for searching Lightning Knowledge articles
 
-
 ## How to use it<br/>
+
+Knowledge utility bar widget :
+![Knowledge widget](https://github.com/FabienHuot/KnowledgeSearch/blob/master/assets/Widget.png)
+
 
 On a record detail page :
 
-![alt text](https://github.com/FabienHuot/KnowledgeSearch/blob/master/assets/Record%20page.png)
+![Knowledge record detail](https://github.com/FabienHuot/KnowledgeSearch/blob/master/assets/Record%20page.png)
 
 
 
