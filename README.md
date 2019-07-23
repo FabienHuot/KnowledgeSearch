@@ -2,7 +2,16 @@
 Lightning Web Component used for searching Lightning Knowledge articles
 
 
-How to use it :<br/>
+## How to use it<br/>
+
+On a record detail page :
+
+![alt text](assets/Record page.png)
+
+
+
+
+How to install it !
     <b>Step 1 )</b> Clone the repo<br/>
     <b>Step 2 )</b> Run the command : <b>./setupScratchOrg<br/></b>
     <b>Step 3 )</b> Create cases with record types (QA Salesforce, QA Trailhead)</b><br/>
