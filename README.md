@@ -6,7 +6,7 @@ Lightning Web Component used for searching Lightning Knowledge articles
 
 On a record detail page :
 
-![alt text](assets/Record page.png)
+![alt text](https://github.com/FabienHuot/KnowledgeSearch/blob/master/assets/Record%20page.png)
 
 
 
