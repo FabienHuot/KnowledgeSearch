@@ -12,10 +12,10 @@
 
             <lightning-layout-item padding="around-small" size="6">
                 <div class="slds-form-element">
-                <label class="slds-form-element__label" for="select-01">Record Type</label>
+                <label class="slds-form-element__label" for="record-types">Record Types</label>
                     <div class="slds-form-element__control">
                         <div class="slds-select_container">
-                        <select class="slds-select" id="selectId" onchange={handleCible}>
+                        <select class="slds-select" id="record-types" onchange={handleCible}>
                                 <option value="All" selected>All</option>
                             <template for:each={rtList} for:item="r" for:index='index'>
                                     <option key={r} value={r}>{r}</option>    
