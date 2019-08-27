@@ -6,7 +6,6 @@ import { NavigationMixin } from 'lightning/navigation';
 
 import KnowledgeRecordTypes from '@salesforce/apex/knowledgeSearchController.KnowledgeRecordTypes';
 import KnowledgeArticles from '@salesforce/apex/knowledgeSearchController.KnowledgeArticles';
-//import getPicklistValues from '@salesforce/apex/knowledgeSearchLWC.getPicklistValues_old';
 
 export default class KnowledgeSearchLWC extends NavigationMixin(LightningElement) {
     @track article;
@@ -15,12 +14,11 @@ export default class KnowledgeSearchLWC extends NavigationMixin(LightningElement
 
     @track results
 
-    //@track cible = 'Tous';
-
     @track rt = 'All';
     @track rtList = [];
 
     @api displayCard;
+    @api noArticlesFound;
 
     get componentClass() {
         return (this.displayCard ? 'slds-page-header' : 'slds-m-around_medium');

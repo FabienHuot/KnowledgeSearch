@@ -11,11 +11,12 @@
         <target>lightning__UtilityBar</target>
     </targets>
     <targetConfigs>
-      <targetConfig targets="lightning__UtilityBar">
+      <!--<targetConfig targets="lightning__UtilityBar">
           <property name="displayCard" type="Boolean" label="Displaying card style" default="false" description="Add a card around the component"/>
-      </targetConfig>
-      <targetConfig targets="lightning__AppPage, lightning__RecordPage, lightning__HomePage">
+      </targetConfig>-->
+      <targetConfig targets="lightning__AppPage, lightning__RecordPage, lightning__HomePage, lightning__UtilityBar">
           <property name="displayCard" type="Boolean" label="Displaying card style" default="true" description="Add a card around the component"/>
+          <property name="noArticlesFound" type="String" label="Message when no result found" default="No article(s) found" description="Message when no result found"/>
       </targetConfig>
   </targetConfigs>
 </LightningComponentBundle>
